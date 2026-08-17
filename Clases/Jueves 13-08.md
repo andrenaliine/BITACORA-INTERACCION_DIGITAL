@@ -49,13 +49,14 @@ La función de los circuitos electronicos es crear un camino para mover electron
 *  Amperaje: Corriente-Diámetro del cable.
 ### Circuito Cerrado:  
 Flujo de corriente de un lado a otro.  
-<img width="200" height="200![Uploading circuito_abierto.jpg…]()
-" alt="circuito_cerrado" src="https://github.com/user-attachments/assets/28b842e4-3afc-4a0f-9b9d-62b0f190b2dd" />
-
+<img width="200" height="200" alt="circuito_cerrado" src="https://github.com/user-attachments/assets/698872eb-f7c2-4b98-9bc4-111e3c788594" />  
+  
+  
 ### Circuito Abierto:  
 No circula corriente por estar interrumpido o no cerrado el circuito.  
-<img width="200" height="200" alt="circuito_cerrado" src="https://github.com/user-attachments/assets/ed2e6fe8-40e9-4500-9c4c-ecd0d56e2edc" />  
-
+<img width="200" height="200" alt="circuito_abierto" src="https://github.com/user-attachments/assets/1448de7b-f2a3-447e-88b1-df155bcb4218" />  
+  
+  
 **RESISTENCIA**  
 Oposición para que la electricidad se desplace - Unidad de medida Ohmio.  
 Limita la corriente dentro del circuito.  
