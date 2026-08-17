@@ -35,10 +35,33 @@ No asumir. la solución aparece después de la necesidad.
 *  SÍNTOMA(S)  
 *  HALLAZGO + INSIGHT  
 La formulación debe surgir de la investigación y evitar adelantar la solución.
-### 10. Objetivos de desarrollo sostenible.    
-<img width="551" height="389" alt="ONU" src="https://github.com/user-attachments/assets/d0a63d8a-0c29-4da8-a4ad-7935ae8fbdd7" />
-## Ejercicio de mapa mental en base a nuestro circuito.  
-
-
+### 10. Objetivos de desarrollo sostenible.  
+<img width="551" height="389" alt="ONU" src="https://github.com/user-attachments/assets/d0a63d8a-0c29-4da8-a4ad-7935ae8fbdd7" />  
 
   
+## Ejercicio de mapa mental en base a nuestro circuito.  
+<img width="3080" height="1224" alt="Mapa mental 1" src="https://github.com/user-attachments/assets/25f4df90-a1d9-47bb-9ec4-1f93c7d5d342" />  
+<img width="451" height="451" alt="Mapa menta 2" src="https://github.com/user-attachments/assets/59e9166a-23f6-4383-ab77-51fa7a901a59" />  
+  
+# Electrónica  
+La función de los circuitos electronicos es crear un camino para mover electrone de un lado a otro.  
+*  Voltaje: Poder-Flujo que pasa por dentro del cable. Vts.  
+*  Amperaje: Corriente-Diámetro del cable.
+### Circuito Cerrado:  
+Flujo de corriente de un lado a otro.  
+<img width="200" height="200![Uploading circuito_abierto.jpg…]()
+" alt="circuito_cerrado" src="https://github.com/user-attachments/assets/28b842e4-3afc-4a0f-9b9d-62b0f190b2dd" />
+
+### Circuito Abierto:  
+No circula corriente por estar interrumpido o no cerrado el circuito.  
+<img width="200" height="200" alt="circuito_cerrado" src="https://github.com/user-attachments/assets/ed2e6fe8-40e9-4500-9c4c-ecd0d56e2edc" />  
+
+**RESISTENCIA**  
+Oposición para que la electricidad se desplace - Unidad de medida Ohmio.  
+Limita la corriente dentro del circuito.  
+**CORRIENTE**  
+Tasa por la cual fluye la carga. Continuidad de carga que atraviesa una superficie - Corriente eléctrica (A)  
+
+TIPOS DE CORRIENTE:  
+* Corriente continua: Fluye siempre en un mismo sentido. CA-AC.
+* Corriente alterna: Cambia periodicamente de sentido. (----)
