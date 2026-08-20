@@ -9,3 +9,5 @@ Lo que podemos experimentar depende de aquello que el cuerpo puede colocar: No p
 **Significado:** Idea mental en si misma.  
 Sensor: Medición, fenómenos físicos.  **Procesador:** Arduino, Esp32, Rasperry. **Actuador:** Led, Steper.  
 
+Trabajo de Proyecto Para Jueves.  
+
