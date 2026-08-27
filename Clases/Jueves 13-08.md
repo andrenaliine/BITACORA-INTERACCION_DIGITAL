@@ -70,6 +70,7 @@ TIPOS DE CORRIENTE:
 # Trabajo de circuito para Lunes 17:  
 Vamos a trabajar con una fotorresistencia LDR que permite que la luz que entra a través de ella emita sonido por el parlante.  
   
-https://github.com/user-attachments/assets/c254c137-c4d4-4d9e-8a38-08b017936934
+https://github.com/user-attachments/assets/c254c137-c4d4-4d9e-8a38-08b017936934  
+  
 ¡¡FUNCIONA!!
 
