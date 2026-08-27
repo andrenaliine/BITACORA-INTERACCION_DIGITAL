@@ -66,3 +66,4 @@ Tasa por la cual fluye la carga. Continuidad de carga que atraviesa una superfic
 TIPOS DE CORRIENTE:  
 * Corriente continua: Fluye siempre en un mismo sentido. CA-AC.
 * Corriente alterna: Cambia periodicamente de sentido. (----)
+
