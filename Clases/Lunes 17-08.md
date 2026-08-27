@@ -26,17 +26,9 @@ Para muestra iteración del prototipo pensamos que con Fernanda seria buena idea
   
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/15f0f73b-660a-44a3-990f-be6db62f7546" />  
 
-**Vista interior del artefacto
+**Vista interior del artefacto** Va cubierto de una carcasa para almacenar el circuito.  
 
 https://github.com/user-attachments/assets/2132c7cf-8ecc-4032-8774-b87fb53ba126
 
 **Pruebas de sonido**  
-
-
-
-
-
-
-
-
-
+  
