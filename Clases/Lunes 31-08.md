@@ -1,0 +1,111 @@
+# Introducción a ESP32: Entorno de Microcontroladores
+
+Este documento presenta una guía introductoria sobre el ecosistema del **ESP32**, abordando desde las diferencias conceptuales entre componentes hasta consideraciones técnicas y de programación.
+
+---
+
+## 1. Categorías y Conceptos Clave
+
+### Microchip / Circuito Integrado (IC)
+* **Descripción:** Placas o componentes de tamaño reducido que cumplen funciones específicas y limitadas en un cuerpo encapsulado.
+* **Ejemplos:** IC 555, LM386, ATmega328P.
+* **Nota:** Que sea un componente pequeño no significa que sea menos potente; simplemente sus aplicaciones están acotadas a tareas específicas.
+
+### Microcontroladores
+* **Descripción:** Un tipo de chip que integra múltiples procesos en una sola unidad. A diferencia de un microchip básico, un microcontrolador actúa como un cerebro más robusto capaz de realizar diversas tareas de forma simulatánea: gestión de Entradas/Salidas (I/O) y protocolos de comunicación.
+* **Ejemplos:** ATmega328P, ESP32, Raspberry Pi RP2040.
+
+### Placas de Desarrollo
+* **Descripción:** Unidades que integran el microcontrolador en un circuito impreso (PCB) con el soporte necesario para facilitar su uso (puertos USB, antenas, botones de reset/boot, reguladores de voltaje, etc.).
+* **Ejemplos Comercializados:**
+  * Arduino Uno R3
+  * Raspberry Pi 5
+  * ESP32 (múltiples versiones)
+  * Adafruit Flora
+* *Cada placa se selecciona según los requerimientos específicos del proyecto.*
+
+---
+
+## 2. Placa de Desarrollo ESP32
+
+El **ESP32** es una placa de desarrollo basada en un potente microcontrolador creado por **Espressif Systems**, orientada al prototipado, la interacción física y el Internet de las Cosas (IoT).
+
+### Principales Características:
+* **Conectividad Inalámbrica:** Incluye Wi-Fi y Bluetooth de fábrica.
+* **Comunicación con Computador:** A través de interfaz USB (útil para la carga de código y monitoreo mediante el *Monitor Serial*).
+* **Gestión de Sensores:** Capacidad para comunicarse con entradas/salidas digitales y analógicas mediante diversos protocolos de comunicación:
+  * **I2C**
+  * **SPI**
+  * **UART**
+  > *Nota:* Es fundamental conocer el protocolo que utiliza el sensor para configurarlo adecuadamente en la placa.
+
+### Conectividad Avanzada:
+1. **Wi-Fi / Redes:** Puede conectarse a una red local existente o levantar su propia red en modo **Access Point (Hotspot)** para alojar servidores web e interfaces de control.
+2. **Bluetooth:** Permite la interacción con periféricos externos.
+3. **ESP-NOW:** Protocolo nativo de Espressif que permite la comunicación directa y de baja latencia entre múltiples dispositivos ESP32 sin necesidad de un router Wi-Fi intermediario.
+*(Relacionado con entornos inalámbricos como Zigbee, Thread y LoRa).*
+
+---
+
+## 3. Entorno de Programación
+
+El desarrollo se realiza habitualmente utilizando el **Arduino IDE** (*Integrated Development Environment*), el cual cuenta con un ecosistema amplio de librerías, complementos y herramientas.
+
+* **Lenguaje:** Basado en **C++**.
+
+### Estructura Base del Código:
+
+```cpp
+void setup() {
+  // Configuración inicial: define los pines a utilizar
+  // y las configuraciones de comunicación. 
+  // Se ejecuta una sola vez al encender o reiniciar la placa.
+}
+
+void loop() {
+  // Bucle principal: se ejecuta de forma repetitiva e indefinida.
+  // Contiene la lógica del programa, lecturas de sensores y estructuras de control (if, else, etc.).
+}
+```
+
+---
+
+## 4. Periféricos y Tipos de Pines (GPIO)
+
+Los pines del ESP32 son de propósito general (**GPIO**) y admiten múltiples funciones:
+
+* **ADC (Analog-to-Digital Converter):** Lectura de señales analógicas.
+* **Touch:** Pines capacitivos sensibles al tacto.
+* **DAC (Digital-to-Analog Converter):** Salida analógica real (útil para generación de audio).
+* **PWM (Pulse Width Modulation):** Modulación por ancho de pulso para el control de energía en dispositivos (como la atenuación de LEDs o control de motores) mediante la conmutación rápida de una señal digital.
+
+---
+
+## 5. Cuidados y Buenas Prácticas con el ESP32
+
+1. **Voltaje de Alimentación:**
+   * No alimentar la placa con más de **5V** en sus pines de entrada.
+   * Los puertos USB estándar y cargadores portátiles suministran **5V**, lo cual es adecuado para alimentar la placa de forma segura.
+2. **Línea de Tierra Común (GND):**
+   * Es indispensable conectar todas las tierras de los módulos externos y fuentes al pin **GND** de la placa para cerrar el circuito.
+3. **Consumo de Corriente Extra:**
+   * Para componentes de alto consumo (servomotores, tiras LED, etc.), utilizar **fuentes de poder externas** y reguladores de voltaje en lugar de alimentar directamente desde los pines de la placa.
+4. **Mapeo de Pines (Pinout):**
+   * Verificar siempre el mapa de pines (*Pinout*) específico del modelo de placa ESP32 a utilizar antes de realizar las conexiones.
+5. **Metodología:**
+   * Desarrollar y probar el proyecto por etapas antes de la integración final.
+
+---
+
+## 6. Zona Práctica
+
+### Tiras LED Direccionables (WS2812B)
+* **Formato:** Cada LED incluye su propio controlador interno.
+* **Conexiones (3 Pines):**
+  * **5V:** Alimentación principal.
+  * **DIN (Data In):** Pin de datos/información conectado a un GPIO de la placa.
+  * **GND:** Tierra común.
+
+### Notas Adicionales:
+* **Proveedores/Referencia local:** *"DEMAS LED"* (San Diego / Matta).
+* **Protección:** Considerar las **normativas IP** (Ingress Protection) según el entorno de instalación (resistencia al polvo y agua)
